@@ -1,0 +1,3 @@
+plugins { id 'com.android.application' }
+android { namespace 'com.buildingtracker.firestore'; compileSdk 35; defaultConfig { applicationId 'com.buildingtracker.firestore.full'; minSdk 26; targetSdk 35; versionCode 19; versionName '19.0'; multiDexEnabled true } packaging { resources { excludes += ['META-INF/INDEX.LIST','META-INF/io.netty.versions.properties','META-INF/DEPENDENCIES','META-INF/LICENSE*','META-INF/NOTICE*'] } } }
+dependencies { implementation 'org.mongodb:mongodb-driver-sync:5.3.1'; implementation 'com.google.code.gson:gson:2.11.0' }
